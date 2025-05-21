@@ -80,6 +80,7 @@ void setup(){
   Firebase.setwriteSizeLimit(firebaseData, "tiny");// establece un límite de tamaño para los datos escritos ***
 
   for(int i = 0; i<10; i++){
+    c[i].Pin = pines[i];
     pinMode(c[i].Pin,OUTPUT);
   }
   pinMode(BotonSiPin,INPUT);
